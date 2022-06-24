@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 12:58:47 by bkhatib           #+#    #+#             */
-/*   Updated: 2022/06/23 17:17:40 by bkhatib          ###   ########.fr       */
+/*   Updated: 2022/06/24 18:07:03 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 typedef struct s_list
 {
-	void			*content;
+	int			*content;
 	struct s_list	*next;
 }					t_list;
 
