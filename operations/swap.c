@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 13:15:31 by bkhatib           #+#    #+#             */
-/*   Updated: 2022/06/23 17:18:24 by bkhatib          ###   ########.fr       */
+/*   Updated: 2022/06/24 18:10:17 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,11 @@
 
 void	ft_swap_a(t_list **stack_a)
 {
-	t_list	*first;
-	t_list	*second;
+	int	*tmp;
 
-	first = *stack_a;
-	second = (*stack_a)->next;
-	(*stack_a)->next = second->next;
-	second->next = first;
-	*stack_a = second;
+	tmp = (*stack_a)->content;
+	(*stack_a)->content = (*stack_a)->next->content;
+	(*stack_a)->next->content = tmp;
 	write(1, "sa\n", 3);
 }
 
