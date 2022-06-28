@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/19 16:01:32 by bkhatib           #+#    #+#             */
-/*   Updated: 2022/06/28 15:25:20 by bkhatib          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:32:43 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,4 @@ int	main(int argc, char **argv)
 	free(number);
 	ft_lstclear(&stack_a, NULL);
 	ft_lstclear(&stack_b, NULL);
-	system("leaks push_swap");
 }
