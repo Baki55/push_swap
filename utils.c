@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 12:58:29 by bkhatib           #+#    #+#             */
-/*   Updated: 2022/06/28 15:25:20 by bkhatib          ###   ########.fr       */
+/*   Updated: 2022/06/28 22:01:45 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	*ft_pars(int argc, char **argv)
 		free(numbers);
 		return (NULL);
 	}
-	while (argc > i)
+	while (i < argc)
 	{
 		numbers[i - 1] = ft_atoi_push(argv[i], numbers);
 		i++;
