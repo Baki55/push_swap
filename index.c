@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   index.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hakermad <hakermad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/21 13:52:23 by bkhatib           #+#    #+#             */
-/*   Updated: 2022/06/23 17:18:58 by bkhatib          ###   ########.fr       */
+/*   Created: 2022/03/21 13:52:23 by hakermad          #+#    #+#             */
+/*   Updated: 2022/04/04 12:57:16 by hakermad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ void	the_index(t_list *stack_a, int *number, int argc)
 		stack_a = stack_a->next;
 	}
 	ft_copy_stack(copy_stack_a, data);
-	free(data);
 }
 
 void	ft_copy_stack(t_list *stack_a,	int	*data)
@@ -55,6 +54,7 @@ void	ft_copy_stack(t_list *stack_a,	int	*data)
 		copy_stack_a = copy_stack_a->next;
 		i++;
 	}
+	free(data);
 }
 
 // int	the_index(t_list *stack, int number)

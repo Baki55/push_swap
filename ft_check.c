@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_check.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hakermad <hakermad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/19 15:46:30 by bkhatib           #+#    #+#             */
-/*   Updated: 2022/06/23 17:18:44 by bkhatib          ###   ########.fr       */
+/*   Created: 2022/03/19 15:46:30 by hakermad          #+#    #+#             */
+/*   Updated: 2022/04/04 15:17:29 by hakermad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,16 +44,11 @@ void	ft_check_args(int argc, char **argv)
 {
 	int		i;
 	long	tmp;
-	char	**args;	
+	char	**args;
 
-	i = 0;
-	if (argc == 2)
-		args = ft_split(argv[1], ' ');
-	else
-	{
-		i = 1;
-		args = argv;
-	}
+	(void) argc;
+	i = 1;
+	args = argv;
 	while (args[i])
 	{
 		tmp = ft_atoi(args[i]);
@@ -63,6 +58,4 @@ void	ft_check_args(int argc, char **argv)
 			ft_error("Error\n");
 		i++;
 	}
-	if (argc == 2)
-		ft_free(args);
 }

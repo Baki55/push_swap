@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sort_little.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hakermad <hakermad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/19 16:14:45 by bkhatib           #+#    #+#             */
-/*   Updated: 2022/06/23 17:20:53 by bkhatib          ###   ########.fr       */
+/*   Created: 2022/03/19 16:14:45 by hakermad          #+#    #+#             */
+/*   Updated: 2022/03/30 12:42:19 by hakermad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	case_three(t_list **stack_a)
 	else if (a > b && b > c)
 	{
 		ft_swap_a(stack_a);
-		ft_reverse_rotate_a(stack_a);
+		ft_reverse_retate_a(stack_a);
 	}
 	else if (a > b && b < c)
 		ft_rotate_a(stack_a);
@@ -51,7 +51,7 @@ void	case_three(t_list **stack_a)
 		ft_rotate_a(stack_a);
 	}
 	else if (a < b && b > c)
-		ft_reverse_rotate_a(stack_a);
+		ft_reverse_retate_a(stack_a);
 }
 
 void	case_four(t_list **stack_a, t_list **stack_b)
@@ -73,7 +73,7 @@ void	case_four(t_list **stack_a, t_list **stack_b)
 				ft_rotate_a(stack_a);
 		else
 			while (j++ < 4)
-				ft_reverse_rotate_a(stack_a);
+				ft_reverse_retate_a(stack_a);
 		ft_push_b(stack_a, stack_b);
 	}
 	case_three(stack_a);
@@ -98,7 +98,7 @@ void	case_five(t_list **stack_a, t_list **stack_b)
 				ft_rotate_a(stack_a);
 		else
 			while (j++ < 5)
-				ft_reverse_rotate_a(stack_a);
+				ft_reverse_retate_a(stack_a);
 		ft_push_b(stack_a, stack_b);
 	}
 	if ((*(int *)(*stack_b)->content) < (*(int *)(*stack_b)->next->content))

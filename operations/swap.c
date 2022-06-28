@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   swap.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hakermad <hakermad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/21 13:15:31 by bkhatib           #+#    #+#             */
-/*   Updated: 2022/06/24 18:10:17 by bkhatib          ###   ########.fr       */
+/*   Created: 2022/03/21 13:15:31 by hakermad          #+#    #+#             */
+/*   Updated: 2022/03/21 13:16:28 by hakermad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,14 @@
 
 void	ft_swap_a(t_list **stack_a)
 {
-	int	*tmp;
+	t_list	*first;
+	t_list	*second;
 
-	tmp = (*stack_a)->content;
-	(*stack_a)->content = (*stack_a)->next->content;
-	(*stack_a)->next->content = tmp;
+	first = *stack_a;
+	second = (*stack_a)->next;
+	(*stack_a)->next = second->next;
+	second->next = first;
+	*stack_a = second;
 	write(1, "sa\n", 3);
 }
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi_push.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hakermad <hakermad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/19 15:33:38 by bkhatib           #+#    #+#             */
-/*   Updated: 2022/06/23 17:18:38 by bkhatib          ###   ########.fr       */
+/*   Created: 2022/03/19 15:33:38 by hakermad          #+#    #+#             */
+/*   Updated: 2022/04/04 13:11:38 by hakermad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_atoi_push(const char *str, int *numbers)
 		if (*str++ == '-')
 			sign *= -1;
 		if (*str == '\0')
-			ft_error("Error\n");
+			ft_free_exit(numbers);
 	}
 	while (*str >= '0' && *str <= '9')
 	{
@@ -37,7 +37,7 @@ int	ft_atoi_push(const char *str, int *numbers)
 		}
 	}
 	if (*str && !(*str >= '0' && *str <= '9'))
-		ft_error("Error\n");
+		ft_free_exit(numbers);
 	return (sign * result);
 }
 
