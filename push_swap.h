@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakermad <hakermad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/19 16:07:48 by hakermad          #+#    #+#             */
-/*   Updated: 2022/04/05 17:07:12 by hakermad         ###   ########.fr       */
+/*   Updated: 2022/06/28 15:22:18 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ void	ft_rotate_a(t_list **stack_a);
 void	ft_rotate_b(t_list **stack_b);
 void	ft_rotate_r(t_list **stack_a, t_list **stack_b);
 t_list	*ft_one_before_last(t_list *stack_a);
-void	ft_reverse_retate_a(t_list **stack_a);
-void	ft_reverse_retate_b(t_list **stack_b);
-void	ft_reverse_retate_r(t_list **stack_a, t_list **stack_b);
+void	ft_reverse_rotate_a(t_list **stack_a);
+void	ft_reverse_rotate_b(t_list **stack_b);
+void	ft_reverse_rotate_r(t_list **stack_a, t_list **stack_b);
 int		*ft_pars(int argc, char **argv);
 int		ft_atoi_push(const char *str, int *numbers);
 void	ft_free_exit(int *numbers);
