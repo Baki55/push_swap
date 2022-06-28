@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 13:52:23 by bkhatib           #+#    #+#             */
-/*   Updated: 2022/06/28 15:25:20 by bkhatib          ###   ########.fr       */
+/*   Updated: 2022/06/28 15:35:17 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,18 +56,3 @@ void	ft_copy_stack(t_list *stack_a,	int	*data)
 	}
 	free(data);
 }
-
-// int	the_index(t_list *stack, int number)
-// {
-// 	int	i;
-
-// 	i = 0;
-// 	while (stack)
-// 	{
-// 		if (*(int *)stack->content == number)
-// 			break ;
-// 		stack = stack->next;
-// 		i++;
-// 	}
-// 	return (i);
-// }
